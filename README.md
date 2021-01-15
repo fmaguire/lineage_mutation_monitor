@@ -6,20 +6,28 @@ monitor daily changes in the nextstrain ingested data from GISAID.
 This takes the nextmeta and nextfasta files from GISAID 
 (either downloaded manually, or using the GISAID API and [ncov-ingest](https://github.com/nextstrain/ncov-ingest)):
 
-    1. Extracts all Canadian genomes
-    2. Quickly annotates mutations using [nextclade](https://github.com/nextstrain/nextclade)
-    3. Adds the mutation information to the nextmeta file
-    4. Compares to the previous day's nextmeta file with mutation information
-    5. Generates an HTML report showing changes and any new mutations/lineages in Canada
+1. Extracts all Canadian genomes
+
+2. Quickly annotates mutations using [nextclade](https://github.com/nextstrain/nextclade)
+
+3. Adds the mutation information to the nextmeta file
+
+4. Compares to the previous day's nextmeta file with mutation information
+
+5. Generates an HTML report showing changes and any new mutations/lineages in Canada
 
 To automate this add this to a cronjob or systemd timer
 
 ## Installation
 
 Dependencies:
+
     - biopython (extracting Canadian genomes)
+
     - pandas (parsing and manipulating data tables)
+
     - plotly (generating the interactive report)
+
     - nextclade (annotates mutations)
 
 These can be installed in an env as follows:
