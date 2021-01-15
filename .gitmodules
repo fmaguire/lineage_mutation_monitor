@@ -1,0 +1,3 @@
+[submodule "covid-19-scripts"]
+	path = covid-19-scripts
+	url = git@github.com:fmaguire/covid-19-scripts
