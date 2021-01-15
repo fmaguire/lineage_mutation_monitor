@@ -12,6 +12,8 @@ This takes the nextmeta and nextfasta files from GISAID
     4. Compares to the previous day's nextmeta file with mutation information
     5. Generates an HTML report showing changes and any new mutations/lineages in Canada
 
+To automate this add this to a cronjob or systemd timer
+
 ## Installation
 
 Dependencies:
